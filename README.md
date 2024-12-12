@@ -43,7 +43,7 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
      ```  
    - For `i686`:  
      ```
-     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-i686/aircrack-ng_3_1.7_i686.deb
+     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-i686/aircrack-ng_3_1.7_i686.deb && dpkg -i aircrack-ng_3_1.7_i686.deb && rm aircrack-ng_3_1.7_i686.deb
      ```  
    - For `x86_64`:  
      ```
@@ -51,10 +51,6 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
      ```  
 
 7. Install the `.deb` file for your architecture:  
-   - For `i686`:  
-     ```
-     dpkg -i aircrack-ng_3_1.7_i686.deb
-     ```  
    - For `x86_64`:  
      ```
      dpkg -i aircrack-ng_3_1.7_x86_64.deb
