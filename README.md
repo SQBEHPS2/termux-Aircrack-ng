@@ -35,11 +35,11 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
 4. Run the command with appropriate on your architecture:  
    - For `aarch64`:  
      ```
-     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-aarch64/aircrack-ng_3_1.7_aarch64.deb && dpkg -i aircrack-ng_3_1.7_aarch64.deb && rm -rf aircrack-ng_3_1.7_aarch64.deb
+     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-aarch64/aircrack-ng_3_1.7_aarch64.deb && dpkg -i aircrack-ng_3_1.7_aarch64.deb && rm aircrack-ng_3_1.7_aarch64.deb
      ```  
    - For `arm`:  
      ```
-     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-arm/aircrack-ng_3_1.7_arm.deb
+     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-arm/aircrack-ng_3_1.7_arm.deb && dpkg -i aircrack-ng_3_1.7_arm.deb && rm aircrack-ng_3_1.7_arm.deb
      ```  
    - For `i686`:  
      ```
@@ -51,10 +51,6 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
      ```  
 
 7. Install the `.deb` file for your architecture:  
-   - For `arm`:  
-     ```
-     dpkg -i aircrack-ng_3_1.7_arm.deb
-     ```  
    - For `i686`:  
      ```
      dpkg -i aircrack-ng_3_1.7_i686.deb
