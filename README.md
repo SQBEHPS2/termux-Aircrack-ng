@@ -47,16 +47,10 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
      ```  
    - For `x86_64`:  
      ```
-     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-x86_64/aircrack-ng_3_1.7_x86_64.deb
+     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-x86_64/aircrack-ng_3_1.7_x86_64.deb && dpkg -i aircrack-ng_3_1.7_x86_64.deb && rm aircrack-ng_3_1.7_x86_64.deb
      ```  
 
-7. Install the `.deb` file for your architecture:  
-   - For `x86_64`:  
-     ```
-     dpkg -i aircrack-ng_3_1.7_x86_64.deb
-     ```  
-
-8. Congratulations! You have successfully installed **aircrack-ng** on your non-rooted phone using Termux.
+Congratulations! You have successfully installed **aircrack-ng** on your non-rooted phone using Termux.
 
 ---
 
