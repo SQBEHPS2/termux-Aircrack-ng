@@ -23,8 +23,7 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
  
 2. Update and upgrade packages:  
    ```
-apt update && apt upgrade -y && pkg install wget -y && apt install libc++ libnl libpcap libsqlite openssl pcre zlib -y
-
+   apt update && apt upgrade -y && pkg install wget -y && apt install libc++ libnl libpcap libsqlite openssl pcre zlib -y
    ```
 3. Determine your device architecture:  
    ```
