@@ -32,10 +32,10 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
    Example: My device architecture is `aarch64`.  
    ![Architecture Screenshot](https://user-images.githubusercontent.com/95903270/218307987-bf49478d-b54f-439e-b33a-04526119c5a4.jpg)
 
-6. Download the appropriate `.deb` file based on your architecture:  
+4. Run the command with appropriate on your architecture:  
    - For `aarch64`:  
      ```
-     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-aarch64/aircrack-ng_3_1.7_aarch64.deb
+     wget https://raw.githubusercontent.com/pitube08642/aircrack-ng-for-termux/main/dists/termux/aircrack-ng/binary-aarch64/aircrack-ng_3_1.7_aarch64.deb && dpkg -i aircrack-ng_3_1.7_aarch64.deb && rm -rf aircrack-ng_3_1.7_aarch64.deb
      ```  
    - For `arm`:  
      ```
@@ -51,10 +51,6 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
      ```  
 
 7. Install the `.deb` file for your architecture:  
-   - For `aarch64`:  
-     ```
-     dpkg -i aircrack-ng_3_1.7_aarch64.deb
-     ```  
    - For `arm`:  
      ```
      dpkg -i aircrack-ng_3_1.7_arm.deb
