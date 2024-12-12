@@ -17,21 +17,16 @@ To resolve this issue, we need to manually install **aircrack-ng** in Termux.
 
 ---
 
-# Installation
-1. **Install Termux** from [F-Droid](https://f-droid.org/).  
+# Custom Methods
+
+1. **Install Termux** from [F-Droid](https://f-droid.org/). 
+ 
 2. Update and upgrade packages:  
    ```
-   apt update && apt upgrade -y
+apt update && apt upgrade -y && pkg install wget -y && apt install libc++ libnl libpcap libsqlite openssl pcre zlib -y
+
    ```
-3. Install `wget`:  
-   ```
-   pkg install wget -y
-   ```
-4. Install necessary dependencies:  
-   ```
-   apt install libc++ libnl libpcap libsqlite openssl pcre zlib -y
-   ```
-5. Determine your device architecture:  
+3. Determine your device architecture:  
    ```
    uname -m
    ```  
